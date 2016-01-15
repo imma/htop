@@ -3,9 +3,7 @@
 function bootstrap {
   case "$(uname -s)" in
     Darwin)
-      if [[ -x "$(which brew 1>&2 || true)" ]]; then
-        brew install htop
-      fi
+      brew install htop
       ;;
     Linux)
       sudo aptitude install -y htop
