@@ -1,6 +1,6 @@
 {
   "require": [
-    "brew",
+    "homebrew",
     "pkgsrc"
   ]
 }
