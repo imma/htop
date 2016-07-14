@@ -1,7 +1,14 @@
 #!/usr/bin/env bash
 
 function bootstrap {
-  pkg ensure sysutils/htop
+	case "$(uname -s)" in
+		Darwin)
+			brew install htop
+			;;
+		Linux)
+			sudo aptitude install -y htop
+			;;
+	esac
 }
 
 bootstrap
