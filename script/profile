@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-function profile {
+function _htop_profile {
   local shome="${_htop_home:-"$(cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"}"
 }
 
-profile
+_htop_profile
