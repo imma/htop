@@ -6,7 +6,7 @@ function bootstrap {
 			brew install htop
 			;;
 		Linux)
-			sudo -E aptitude install -y htop
+			pkg ensure sysutils/htop
 			;;
 	esac
 }
