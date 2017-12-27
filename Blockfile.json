@@ -2,5 +2,6 @@
   "require": [
     "homebrew",
     "pkgsrc"
-  ]
+  ],
+  "versions": {}
 }
